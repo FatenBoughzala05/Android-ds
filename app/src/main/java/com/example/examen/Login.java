@@ -12,14 +12,13 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        txt=(TextView) findViewById(R.id.user);
+        txt=(TextView) findViewById(R.id.Register);
 txt.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         Intent intent=new Intent(getApplicationContext(), Registre.class);
         startActivity(intent);
-        setContentView(R.layout.activity_login);
-        finish();
+
     }
 });
     }
